@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  width: 320px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.card img {
+  width: 200px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.buttons {
+  position: relative;
+  height: 60px;
+}
+
+button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+#no {
+  background: #ddd;
+  position: absolute;
+  right: 0;
+}
+
+/* POPUP */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  padding: 25px;
+  width: 320px;
+  border-radius: 20px;
+  text-align: center;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.info {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.promise {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* КНОПКА 2ГИС */
+.pink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #ff4d6d;
+  color: white;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.close {
+  background: #eee;
+  width: 100%;
+}
+
